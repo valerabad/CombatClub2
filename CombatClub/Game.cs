@@ -9,6 +9,7 @@ namespace CombatClub
 {
     class Game
     {
+        // add test comment
         public Form form1;
         public Player player;
         public ComputerPlayer computerPlayer;
