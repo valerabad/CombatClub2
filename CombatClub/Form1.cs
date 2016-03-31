@@ -34,15 +34,19 @@ namespace CombatClub
                 progressBarPlayer, progressBarComputer);
 
 //            game.form1 = this.Form1;
-            game.player.Block += new Player.Del(game.EventMessage1);
-            game.player.Wound += new Player.Del(game.EventMessage2);
-            game.player.Death += new Player.Del(game.EventMessage3);
+            //game.player.Block += new Player.Del(game.EventBlockLog);
+            //game.player.Wound += new Player.Del(game.EventWoundLog);
+            //game.player.Death += new Player.Del(game.EventDeathLog);
+            //game.player.BlockTrue += new EventHandler<PlayerEventArgs>(game.EventBlockLogTrue);
 
-            game.computerPlayer.Block += new ComputerPlayer.Del(game.EventMessage1);
-            game.computerPlayer.Wound += new ComputerPlayer.Del(game.EventMessage2);
-            game.computerPlayer.Death += new ComputerPlayer.Del(game.EventMessage3);
+            //game.computerPlayer.Block += new ComputerPlayer.Del(game.EventBlockLog);
+            //game.computerPlayer.Wound += new ComputerPlayer.Del(game.EventWoundLog);
+            //game.computerPlayer.Death += new ComputerPlayer.Del(game.EventDeathLog);
             
         }
+
+
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {           
@@ -52,8 +56,7 @@ namespace CombatClub
         }
         
         private void buttonHead_Click(object sender, EventArgs e)
-        {
-            //game.GameProc(BodyParts.head);           
+        {                      
             game.LogicGame(BodyParts.head);
         }
 
